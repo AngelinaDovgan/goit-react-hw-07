@@ -14,16 +14,6 @@ const UserSchema = object({
 export default function ContactForm() {
     const dispatch = useDispatch();
 
-    // const handleSubmit = (values, action) => {
-    //     const newContact = {
-    //         id: nanoid(),
-    //         name: values.name,
-    //         number: values.number,
-    //     };
-    //     dispatch(addContact(newContact));
-    //     action.resetForm();
-    // }
-
     const handleSubmit = (values, actions) => {
         dispatch(addContact({
             name: values.name,
