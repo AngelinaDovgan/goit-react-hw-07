@@ -1,6 +1,7 @@
 .mainlist {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 12px;
     padding: 8px;
     list-style: none;
@@ -9,4 +10,6 @@
 .listitem {
     border: 1px solid black;
     padding: 25px;
+    height: auto;
+    max-width: 100%;
 }

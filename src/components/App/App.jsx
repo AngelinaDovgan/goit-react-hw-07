@@ -8,7 +8,7 @@ import ContactForm from '../ContactForm/ContactForm';
 import Error from '../Error/Error';
 import { fetchContacts } from '../../redux/contactsOps';
 import { selectLoading, selectError,  } from '../../redux/contactsSlice';
-import './App.css'
+import './App.css';
 
 
 export default function App() {
@@ -27,7 +27,7 @@ export default function App() {
       <SearchBox />
       {loading && <Loader>Loading contacts...</Loader>}
       {error && <Error>Error!</Error>}
-      <ContactList />
+        <ContactList />
     </Layout>
   );
 }
